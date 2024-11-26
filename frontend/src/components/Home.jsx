@@ -21,9 +21,9 @@ const Home = () => {
             {/* Capture Section */}
             <div className="text-center">
               <img
-                src="https://plus.unsplash.com/premium_photo-1661932816149-291a447e3022?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjdG9yeSUyMHdvcmtlcnxlbnwwfHwwfHx8MA%3D%3D"
+                src="https://www.existingconditions.com/hubfs/image-png-Oct-09-2023-04-35-51-8679-PM.png"
                 alt="Capture"
-                className="mx-auto mb-4 h-56 w-80"
+                className="mx-auto mb-4 h-56 w-80 bg-blend-color-burn"
               />
               <h3 className="text-xl font-semibold mb-4 text-blue-600">
                 Capture
@@ -47,9 +47,9 @@ const Home = () => {
             {/* Process Section */}
             <div className="text-center">
               <img
-                src="https://www.honor.com/content/dam/honor/ph/blog/2024/difference-between-laptop-and-desktop/pc-3.jpg"
+                src="https://www.transparentpng.com/thumb/computer/9KxXVp-technological-items-png-laptop-desktop-phone-tablet-usage-fee-technology.png"
                 alt="Process"
-                className="mx-auto mb-4 h-56 w-80"
+                className="mx-auto mb-4 h-56 w-80 bg-blend-color-burn"
               />
               <h3 className="text-xl font-semibold mb-4 text-blue-600">
                 Process
@@ -69,7 +69,7 @@ const Home = () => {
               <img
                 src="https://sattec.com.sa/wp-content/uploads/2022/06/372-3720615_edinburgh-computer-repair-pc-laptop-lenovo-ideacentre-aio.jpg"
                 alt="Access"
-                className="mx-auto mb-4"
+                className="mx-auto mb-4 bg-blend-color-burn"
               />
               <h3 className="text-xl font-semibold mb-4 text-blue-600">
                 Access
@@ -92,45 +92,49 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-gray-50 py-12">
+      <section className="py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-8">Learn more about ...</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <button className="bg-gray-800 text-white py-3 px-6  hover:bg-gray-700">
+          {/* First Row */}
+          <div className="flex flex-wrap justify-center gap-4 mb-4">
+            <button className="bg-gray-800 text-white py-3 w-72 hover:bg-gray-700">
               Our products and pricing
             </button>
-            <button className="bg-gray-800 text-white py-3 px-6  hover:bg-gray-700">
+            <button className="bg-gray-800 text-white py-3 w-72 hover:bg-gray-700">
               Our industry solutions
             </button>
-            <button className="bg-gray-800 text-white py-3 px-6  hover:bg-gray-700">
+            <button className="bg-gray-800 text-white py-3 w-72 hover:bg-gray-700">
               Improving efficiency with NavVis
             </button>
-            <button className="bg-gray-800 text-white py-3 px-2  hover:bg-gray-700">
+          </div>
+          {/* Second Row */}
+          <div className="flex flex-wrap justify-center gap-4">
+            <button className="bg-gray-800 text-white py-3 w-64 hover:bg-gray-700">
               Our careers and culture
             </button>
-            <button className="bg-gray-800 text-white py-3 px-2  hover:bg-gray-950">
+            <button className="bg-gray-800 text-white py-3 w-64 hover:bg-gray-700">
               Our customer support
             </button>
-            <button className="bg-gray-800 text-white py-3 px-2  hover:bg-gray-950">
+            <button className="bg-gray-800 text-white py-3 w-64 hover:bg-gray-700">
               How to contact us
             </button>
           </div>
         </div>
       </section>
 
-      <section className="bg-gray-50 py-12">
+      <featureSection className="bg-gray-50 py-12">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Featured news</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            {/* Card 1 */}
-            <div className="relative bg-blue-900 text-white p-6 rounded-lg shadow-md overflow-hidden">
+          <h2 className="text-3xl font-bold mb-8">Featured News</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            {/* Card 1 - Double Width */}
+            <div className="h-[250px] relative bg-blue-900 text-white p-6 rounded-lg shadow-md overflow-hidden md:col-span-2">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-50"
                 style={{
                   backgroundImage: `url('https://nancy-rubin.com/wp-content/uploads/2021/08/iStock-1299734004.jpg')`,
                 }}
               ></div>
-              <div className="relative">
+              <div className="relative place-items-start pt-24">
                 <p className="text-sm font-semibold">SPECIAL OFFER</p>
                 <h3 className="text-lg font-bold mt-2">
                   NavVis LX-Series Bundle
@@ -147,7 +151,7 @@ const Home = () => {
                   backgroundImage: `url('https://plus.unsplash.com/premium_photo-1661932816149-291a447e3022?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjdG9yeSUyMHdvcmtlcnxlbnwwfHwwfHx8MA%3D%3D')`,
                 }}
               ></div>
-              <div className="relative">
+              <div className="relative place-items-start pt-24">
                 <p className="text-sm font-semibold">SAMPLE DATA</p>
                 <h3 className="text-lg font-bold mt-2">
                   Power Station Construction Site
@@ -157,28 +161,29 @@ const Home = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="relative bg-gray-700 text-white p-6 rounded-lg shadow-md overflow-hidden">
+            <div className="h-[250px] relative bg-gray-700 text-white p-6 rounded-lg shadow-md overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-50"
                 style={{
                   backgroundImage: `url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg')`,
                 }}
               ></div>
-              <div className="relative">
+              <div className="relative place-items-start pt-24">
                 <p className="text-sm font-semibold">PRESS RELEASE</p>
                 <h3 className="text-lg font-bold mt-2">NavVis MLX Launch</h3>
                 <p className="mt-2">Read the press release →</p>
               </div>
             </div>
-            {/* Card 4 */}
-            <div className="relative bg-gray-700 text-white p-6 rounded-lg shadow-md overflow-hidden">
+
+            {/* Card 4 - Double Width */}
+            <div className="relative bg-gray-700 text-white p-6 rounded-lg shadow-md overflow-hidden md:col-span-2">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-50"
                 style={{
                   backgroundImage: `url('https://images.unsplash.com/photo-1568226625122-677036fac8a8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHZpYXxlbnwwfHwwfHx8MA%3D%3D')`,
                 }}
               ></div>
-              <div className="relative">
+              <div className="relative place-items-start pt-24">
                 <p className="text-sm font-semibold">WHITE PAPER</p>
                 <h3 className="text-lg font-bold mt-2">
                   Transform Process Operations
@@ -187,25 +192,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Card 5 */}
-            {/* <div className="relative bg-gray-800 text-white p-6 rounded-lg shadow-md overflow-hidden">
-              <div
-                className="absolute inset-0 bg-cover bg-center opacity-50"
-                style={{ backgroundImage: `url('your-image-url-5.jpg')` }}
-              ></div>
-              <div className="relative">
-                <p className="text-sm font-semibold">VIDEO</p>
-                <h3 className="text-lg font-bold mt-2">
-                  NavVis Reality Capture
-                </h3>
-                <p className="mt-2">Watch the video →</p>
-              </div>
-            </div> */}
-          </div>
         </div>
-      </section>
+      </featureSection>
+
       <section>
         <div className="max-w-6xl mx-auto text-center my-10">
           <h2 className="text-3xl font-bold mb-8">Resources </h2>
@@ -213,8 +202,8 @@ const Home = () => {
             {/* Card 1 */}
             <div className="h-[400px] relative bg-gray-50 text-slate-900 p-6 rounded-lg shadow-md overflow-hidden">
               <div className="relative">
-                <h3 className="text-sm font-semibold"> Sample data</h3>
-                <p className="text-lg font-bold mt-2">
+                <h3 className="text-lg font-bold"> Sample data</h3>
+                <p className="text-sm font-semibold mt-2">
                   Get free downloads of point clouds, models, linework, and more
                   thanks to seamless integration with 3rd party software.
                 </p>
@@ -225,8 +214,8 @@ const Home = () => {
             {/* Card 2 */}
             <div className="relative  bg-gray-50 text-slate-900 p-6 rounded-lg shadow-md overflow-hidden">
               <div className="relative">
-                <h3 className="text-sm font-semibold"> Case studies</h3>
-                <p className="text-lg font-bold mt-2">
+                <h3 className="text-lg font-bold"> Case studies</h3>
+                <p className="text-sm font-semibold mt-2">
                   Get free downloads of point clouds, models, linework, and more
                   thanks to seamless integration with 3rd party software.
                 </p>
@@ -237,11 +226,8 @@ const Home = () => {
             {/* Card 3 */}
             <div className="h-[400px] relative  bg-gray-50 text-slate-900 p-6 rounded-lg shadow-md overflow-hidden">
               <div className="relative">
-                <h3 className="text-sm font-semibold">
-                  {" "}
-                  White papers & guides
-                </h3>
-                <p className="text-lg font-bold mt-2">
+                <h3 className="text-lg font-bold"> White papers & guides</h3>
+                <p className="text-sm font-semibold mt-2">
                   Download and read our white papers and guides about various
                   topics.
                 </p>
@@ -251,10 +237,10 @@ const Home = () => {
             {/* Card 4 */}
             <div className="h-[400px] relative bg-gray-50 text-slate-900 p-6 rounded-lg shadow-md overflow-hidden">
               <div className="relative">
-                <h3 className="text-sm font-semibold">
+                <h3 className="text-lg font-bold">
                   Upcoming & on-demand webinars
                 </h3>
-                <p className="text-lg font-bold mt-2">
+                <p className="text-sm font-semibold mt-2">
                   Watch our webinars on demand and join our live webinars &
                   virtual demos.
                 </p>
@@ -263,8 +249,8 @@ const Home = () => {
             </div>
             <div className="relative bg-gray-50 text-slate-900 p-6 rounded-lg shadow-md overflow-hidden">
               <div className="relative">
-                <h3 className="text-sm font-semibold"> Videos</h3>
-                <p className="text-lg font-bold mt-2">
+                <h3 className="text-lg font-bold"> Videos</h3>
+                <p className="text-sm font-semibold mt-2">
                   Watch our latest insights from the industry and customer
                   stories.
                 </p>
@@ -273,8 +259,8 @@ const Home = () => {
             </div>
             <div className="relative bg-gray-50 text-slate-900 p-6 rounded-lg shadow-md overflow-hidden">
               <div className="relative">
-                <h3 className="text-sm font-semibold"> Blog</h3>
-                <p className="text-lg font-bold mt-2">
+                <h3 className="text-lg font-bold"> Blog</h3>
+                <p className="text-sm font-semibold mt-2">
                   Check out our company news, updates, announcements, useful
                   insights, stories, tips and tricks.
                 </p>
